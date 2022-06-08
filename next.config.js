@@ -5,7 +5,6 @@ console.log(`Using env config ${process.env.NODE_ENV}`);
 
 module.exports = withPWA({
   reactStrictMode: true,
-  target: 'serverless',
   distDir: '.next',
   pwa: {
     dest: 'public',

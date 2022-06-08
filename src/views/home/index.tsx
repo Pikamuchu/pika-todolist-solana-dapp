@@ -37,11 +37,13 @@ export const HomeView: FC = ({ }) => {
           <p>A simple Solana TODO list dapp.</p>
         </h4>
         <div className="md:w-full">
-            <img src="logo.svg" className="max-w-md mx-auto"/>
+            <img src="logo.svg" className="mx-auto"/>
         </div>
         <div className="max-w-md mx-auto p-6 my-2">
-          <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Start creating a list  </button>
-        </div>        
+          <button className="btn btn-primary">
+            Start creating a list
+          </button>
+        </div>
         <div className="text-center">
           {/* {wallet.publicKey && <p>Public Key: {wallet.publicKey.toBase58()}</p>} */}
           {wallet && <p>SOL Balance: {(balance || 0).toLocaleString()}</p>}

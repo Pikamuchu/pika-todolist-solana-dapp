@@ -36,16 +36,16 @@ export const SendTransaction: FC = () => {
     }, [publicKey, notify, connection, sendTransaction]);
 
     return (
-        <div>
-            <button
-                className="group w-60 m-2 btn animate-pulse disabled:animate-none bg-gradient-to-r from-[#9945FF] to-[#14F195] hover:from-pink-500 hover:to-yellow-500 ... "
+      <div className="p-2 my-2">
+          <button
+                className="btn btn-primary"
                 onClick={onClick} disabled={!publicKey}
             >
                 <div className="hidden group-disabled:block ">
                     Wallet not connected
                 </div>
-                <span className="block group-disabled:hidden" > 
-                    Send Transaction 
+                <span className="block group-disabled:hidden" >
+                    Send Transaction
                 </span>
             </button>
         </div>

@@ -28,16 +28,16 @@ export const SignMessage: FC = () => {
     }, [publicKey, notify, signMessage]);
 
     return (
-        <div>
+        <div className="p-2 my-2">
             <button
-                className="group w-60 m-2 btn animate-pulse disabled:animate-none bg-gradient-to-r from-[#9945FF] to-[#14F195] hover:from-pink-500 hover:to-yellow-500 ... "
+                className="btn btn-primary"
                 onClick={onClick} disabled={!publicKey}
             >
                 <div className="hidden group-disabled:block">
                     Wallet not connected
                 </div>
-                <span className="block group-disabled:hidden" > 
-                    Sign Message 
+                <span className="block group-disabled:hidden" >
+                    Sign Message
                 </span>
             </button>
         </div>
