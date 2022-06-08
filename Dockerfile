@@ -1,15 +1,18 @@
-FROM node:12-alpine
+FROM node:12
 
-WORKDIR /opt/app
+# Set the working directory
+WORKDIR /usr/src/app
 
-ENV NODE_ENV production
+# Copy package.json file
+COPY package.json yarn.lock ./
 
-COPY package*.json ./
+# Install dependencies
+RUN yarn
 
-RUN npm ci 
+# Copy all files
+COPY . .
 
-COPY . /opt/app
+RUN yarn build
 
-RUN npm install --dev && npm run build
-
-CMD [ "npm", "start" ]
+# Start the app
+CMD yarn start

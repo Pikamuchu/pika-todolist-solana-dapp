@@ -33,7 +33,7 @@ export const HomeView: FC = ({ }) => {
         <h1 className="text-center text-5xl md:pl-12 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#811e09] to-[#fad61d]">
           TODO list<span className='text-sm font-normal align-top text-slate-700'>v{pkg.version}</span>
         </h1>
-        <h4 className="md:w-full text-center text-slate-300 my-2">
+        <h4 className="md:w-full text-center my-2">
           <p>A simple Solana TODO list dapp.</p>
         </h4>
         <div className="md:w-full">

@@ -1,0 +1,18 @@
+{
+  "name": "Pika TODO List",
+  "short_name": "PikaToList",
+  "theme_color": "#f4dc26",
+  "background_color": "#f4dc26",
+  "display": "standalone",
+  "orientation": "any",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

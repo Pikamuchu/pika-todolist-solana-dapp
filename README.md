@@ -4,11 +4,12 @@
 
 ## Introduction
 
-Simple "to do list" solana dapp
+Simple todo list web3 distributed application using Solana blockchain network.",
 
 ### Technical features
 
 * Progressive Web Application.
+* Serverless.
 * Solana integration.
 
 ## Developing
@@ -18,7 +19,7 @@ Simple "to do list" solana dapp
 Clone the source code repository
 
 ```bash
-  git@github.com:Pikamuchu/pika-pikadex-app.git
+  git clone git@github.com:Pikamuchu/pika-todolist-solana-dapp.git
 ```
 
 Install node modules dependencies

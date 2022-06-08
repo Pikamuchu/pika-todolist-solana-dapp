@@ -1,12 +1,27 @@
 {
-  "name": "solana-dapp-next",
+  "name": "pika-todolist-solana-dapp",
   "version": "0.1.0",
+  "description": "Simple todo list web3 distributed application using Solana blockchain network.",
+  "author": "Antonio Marin",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "react",
+    "next",
+    "pwa",
+    "progressive",
+    "progressive web app",
+    "web3",
+    "dapp",
+    "react",
+    "tailwind",
+    "solana",
+    "blockchain"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "cross-env NODE_ENV=development next",
+    "build": "cross-env NODE_ENV=production next build",
+    "start": "cross-env NODE_ENV=production next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -21,6 +36,7 @@
     "immer": "^9.0.12",
     "next": "12.0.8",
     "next-compose-plugins": "^2.2.1",
+    "next-pwa": "^5.5.4",
     "next-transpile-modules": "^9.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

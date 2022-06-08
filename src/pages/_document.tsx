@@ -11,7 +11,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <link rel="shortcut icon" href="/favicon.ico"/>
+          <link rel="shortcut icon" type="image/png" href="/icon.png"/>
+          <link rel="shortcut icon" sizes="192x192" href="/icon.png"/>
+          <link rel="apple-touch-icon" href="/icon.png"></link>
+	  <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
           <Main />
